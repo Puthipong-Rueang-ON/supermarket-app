@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS lab8;
+USE lab8;
+
+CREATE TABLE IF NOT EXISTS products (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255),
+  category VARCHAR(255),
+  price DECIMAL(10,2),
+  stock INT,
+  image VARCHAR(255)
+);
