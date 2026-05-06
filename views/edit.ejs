@@ -1,0 +1,13 @@
+<h1>Edit Product</h1>
+
+<form action="/edit/<%= product.id %>" method="POST" enctype="multipart/form-data">
+<input type="text" name="name" value="<%= product.name %>"><br>
+<input type="text" name="category" value="<%= product.category %>"><br>
+<input type="number" name="price" value="<%= product.price %>"><br>
+<input type="number" name="stock" value="<%= product.stock %>"><br>
+
+<img src="/uploads/<%= product.image %>" width="100"><br>
+
+<input type="file" name="image"><br>
+<button type="submit">Update</button>
+</form>
